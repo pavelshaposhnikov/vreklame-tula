@@ -686,7 +686,7 @@ ul, li {
 }
 
 .reviews__item {
-    margin-right: 10px;
+    margin-right: 15px;
     padding: 30px 30px 40px;
     width: 570px;
     height: 267px;
@@ -1643,6 +1643,7 @@ ul, li {
         height: 290px;
         text-align: center;
         border-bottom: 1px solid #eee;
+        border-right: 0;
     }
 
     .teasers__item-text {
