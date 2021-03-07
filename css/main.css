@@ -298,7 +298,7 @@ ul, li {
     bottom: 0;
     background-position: center;
     z-index: 2;
-    left: calc(50% - 1004px / 2);
+    left: calc(35% - 825px / 2);
     height: 614px;
     width: 825px;
 }
@@ -308,10 +308,74 @@ ul, li {
     position: absolute;
     background: url(../img/banner/clouds.png) center center no-repeat;
     left: 0;
-    top: 20px;
+    top: 0;
     z-index: 2;
-    width: 1577px;
-    height: 753px;
+    max-width: 1577px;
+    width: 100%;
+    height: 620px;
+}
+
+.banner__inner {
+    height: 643px;
+}
+
+.banner__form {
+    position: absolute;
+    top: calc(50% - 444px / 2);
+    right: calc(25% - 370px / 2);
+    z-index: 10;
+    padding: 55px 0 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    height: 444px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 2px;
+}
+
+.banner__form-title {
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #2586EE;
+    text-align: center;
+}
+
+.banner__form-subtitle {
+    margin-bottom: 30px;
+    max-width: 322px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.banner__form-item {
+    margin-bottom: 10px;
+    padding-left: 22px;
+    width: 275px;
+    height: 60px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+}
+
+.banner__form-item legend {
+    font-size: 13px;
+    font-weight: 400;
+    color: #2D7DC8;
+}
+
+.banner__form-item input {
+    padding: 10px 10px 0px 0px;
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.banner__btn {
+    margin-top: 20px;
 }
 
 /*========================
@@ -622,6 +686,7 @@ ul, li {
 }
 
 .reviews__item {
+    margin-right: 10px;
     padding: 30px 30px 40px;
     width: 570px;
     height: 267px;
@@ -1056,6 +1121,15 @@ ul, li {
 ==========================*/
 
 @media (max-width: 1500px) {
+
+    .banner::after {
+        left: calc(24% - 825px / 2);
+    }
+
+    .banner__form {
+        right: calc(25% - 370px / 2);
+    }
+
     .offer__content {
         width: 45%;
     }
@@ -1100,6 +1174,10 @@ ul, li {
 }
 
 @media (max-width: 1160px) {
+
+    .banner__form {
+        right: calc(20% - 370px / 2);
+    }
 
     .header__btn {
         max-width: 150px;
@@ -1231,6 +1309,41 @@ ul, li {
         flex-direction: column;
     }
 
+    .banner::after {
+        display: none;
+    }
+
+    .banner__inner {
+        min-height: 841px;
+        background-image: url(../img/banner/billboard-tablets.png);
+        background-position-x: center;
+        background-repeat: no-repeat;
+    }
+
+    .banner__form {
+        width: 700px;
+        height: 246px;
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 2px;
+        top: calc(70% - 246px / 2);
+        left: calc(50% - 700px / 2);
+    }
+
+    .banner__form-caption {
+        width: 90%;
+    }
+    
+    .banner__form-title, .banner__form-subtitle  {
+        text-align: left;
+    }
+    
+    .banner__form-subtitle {
+        margin-bottom: 15px;
+    }
+
     .teasers {
         min-height: 324px;
     }
@@ -1271,7 +1384,7 @@ ul, li {
         margin-top: 20px;
     }
 
-    .offer__form-content {
+    .offer__form-content, .banner__form-content {
         display: flex;
         align-items: center;
     }
@@ -1288,13 +1401,13 @@ ul, li {
         left: 0;
     }
 
-    .offer__form-item {
+    .offer__form-item, .banner__form-item {
         margin-right: 10px;
         margin-bottom: 0;
         width: 190px;
     }
 
-    .offer__btn {
+    .offer__btn, .banner__btn {
         margin-top: 0;
         width: 242px;
         height: 53px;
@@ -1486,6 +1599,12 @@ ul, li {
 }
 
 @media (max-width: 760px) {
+
+    .banner__form {
+        width: 550px;
+        left: calc(50% - 550px / 2);
+    }
+
     .call__caption {
         z-index: 10;
     }
@@ -1502,12 +1621,12 @@ ul, li {
         margin: 0px 125px 30px 0px;
     }
 
-    .offer__form-item {
+    .offer__form-item, .banner__form-item {
         width: 160px;
         padding-left: 10px;
     }
 
-    .offer__btn {
+    .offer__btn, .banner__btn {
         width: 160px;
     }
 }
@@ -1560,6 +1679,32 @@ ul, li {
         right: 0;
     }
 
+    .banner__inner {
+        background-position-y: -15%;
+    }
+
+    .banner__form {
+        padding: 30px 15px 65px;
+        width: 290px;
+        height: 374px;
+        left: calc(50% - 290px / 2);
+        top: calc(70% - 374px / 2);
+    }
+
+    .banner__form-item, .offer__form-item {
+        width: 250px;
+        margin: 0 0 15px;
+    }
+
+    .banner__form-caption {
+        width: 100%;
+    }
+    
+    .banner__btn, .offer__btn {
+        width: 250px;
+        margin-top: 10px;
+    }
+
     .services {
         margin: 40px 0 50px;
     }
@@ -1598,18 +1743,12 @@ ul, li {
         text-align: center;
     }
 
-    .offer__form-content {
+    .offer__form-content, .banner__form-content {
         flex-direction: column;
     }
 
-    .offer__form-item {
-        width: 275px;
-        margin: 0 0 15px;
-    }
-
-    .offer__btn {
-        margin-top: 10px;
-        width: 275px;
+    .banner__form-title, .banner__form-subtitle {
+        text-align: center;
     }
 
     .portfolio {
@@ -1737,6 +1876,22 @@ ul, li {
     .logo img {
         width: 51px;
         height: 38px;
+    }
+
+    .banner {
+        background-image: url(../img/banner/baner-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 1%;
+    }
+
+    .banner__inner {
+        background-image: none;
+        min-height: 661px;
+    }
+
+    .banner__form {
+        top: calc(65% - 374px / 2);
     }
 
     .services__caption .title {
