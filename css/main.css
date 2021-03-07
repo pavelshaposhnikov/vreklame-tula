@@ -1224,6 +1224,10 @@ ul, li {
         padding: 0 20px;
     }
 
+    .header .container {
+        padding: 0;
+    }
+
     .header__item:first-child, .header__item:nth-child(2), .header__btn, .logo::after {
         display: none;
     }
@@ -1251,9 +1255,10 @@ ul, li {
         flex-direction: unset;
     }
 
-    .header__top .header__item {
+    .header__item {
         position: absolute;
         right: 0;
+        margin-right: 20px;
     }
 
     .nav {
@@ -1296,7 +1301,7 @@ ul, li {
 
     .mobile-nav {
         display: block;
-        margin-right: 0;
+        margin: 0 0 0 20px;
         position: absolute;
         top: calc(50% - 21px);
     }
@@ -1673,10 +1678,12 @@ ul, li {
 
     .logo {
         left: 0;
+        margin-left: 15px;
     }
 
     .mobile-nav {
         right: 0;
+        margin-right: 15px;
     }
 
     .banner__inner {
