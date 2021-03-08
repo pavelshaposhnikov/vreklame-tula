@@ -372,6 +372,7 @@ ul, li {
     border: none;
     width: 100%;
     cursor: pointer;
+    color: #777;
 }
 
 .banner__btn {
@@ -588,6 +589,7 @@ ul, li {
     border: none;
     width: 100%;
     cursor: pointer;
+    color: #777;
 }
 
 .offer__btn {
@@ -815,7 +817,7 @@ ul, li {
 }
 
 .calculation__info-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 36px;
     font-weight: 900;
     text-transform: uppercase;
