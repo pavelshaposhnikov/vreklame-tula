@@ -37,7 +37,7 @@ $('.portfolio__items').slick({
               }
             },
             {
-              breakpoint: 560,
+              breakpoint: 680,
               settings: {
                 slidesToShow: 1,
                 arrows: false,
