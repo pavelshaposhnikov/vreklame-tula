@@ -513,7 +513,7 @@ ul, li {
     font-weight: 900;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 3%;
+    letter-spacing: 2px;
 }
 
 .offer__info-text {
@@ -830,7 +830,7 @@ ul, li {
     font-weight: 900;
     text-transform: uppercase;
     color: #fff;
-    letter-spacing: 3%;
+    letter-spacing: 2px;
 }
 
 .calculation__info-text {
@@ -1091,7 +1091,7 @@ ul, li {
     font-weight: 700;
     text-transform: uppercase;
     color: #333;
-    letter-spacing: 2%;
+    letter-spacing: 1px;
 }
 
 .footer__item-block .footer__block-text:last-child {
@@ -1119,7 +1119,7 @@ ul, li {
     font-weight: 400;
     color: #2586EE;
     text-transform: uppercase;
-    letter-spacing: 2%;
+    letter-spacing: 1px;
 }
 
 .footer__contacts-desc {
