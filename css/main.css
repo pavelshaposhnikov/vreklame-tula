@@ -209,9 +209,16 @@ ul, li {
     bottom: 30px;
 }
 
+.nav .nav__item:nth-child(2)::after, .nav__item:nth-child(3)::after {
+    content: "+";
+    font-size: 15px;
+    margin-left: 5px;
+}
+
 .nav__list {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav__item:first-child {
@@ -226,6 +233,32 @@ ul, li {
 
 .nav__link:hover {
     text-decoration: underline;
+}
+
+.nav__sublist {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    transition-duration: all 0.5s ease;
+}
+
+.nav__item:hover > .nav__sublist {
+    display: inherit;
+}
+
+.nav__sublist .nav__item {
+    transition-duration: 0.5s;
+    padding: 15px 15px 15px 10px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.nav__sublist .nav__item:first-child {
+    border-top: none;
+}
+
+.nav__sublist .nav__item::after {
+    display: none;
 }
 
 /* MOBILE NAV */
@@ -1097,15 +1130,22 @@ ul, li {
     letter-spacing: 1px;
 }
 
-.footer__item-block .footer__block-text:last-child {
+.footer__list-item {
+    margin-bottom: 10px;
+}
+
+.footer__item-block .footer__list-item:last-child {
     margin-bottom: 0;
 }
 
-.footer__block-text {
-    margin-bottom: 10px;
+.footer__list-item {
     font-size: 14px;
     font-weight: 400;
     color: #333;
+}
+
+.footer__list-item:hover {
+    text-decoration: underline;
 }
 
 .footer__contacts-item {
