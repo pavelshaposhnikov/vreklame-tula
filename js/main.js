@@ -1,6 +1,7 @@
 /* Nav Toggle */ 
 let nav = $("#nav");
 let navToggle = $("#navToggle");
+let navdetails = $("#navdetails");
   
 $("#navToggle").on("click", function(event) {
   event.preventDefault();
@@ -19,6 +20,10 @@ $('.nav__link').on('click', function(event){
   $('.nav-toggle').removeClass('opened');
 });
 
+/* List remover */ 
+$("#navdetails").on('click', function(e){
+  $(".navdetails").removeAttr("open");
+})
 
 /* Слайдер секции "Наши последние работы" */ 
 $('.portfolio__items').slick({
@@ -30,7 +35,7 @@ $('.portfolio__items').slick({
     dots: true,
           responsive: [
             {
-              breakpoint: 1250,
+              breakpoint: 1230,
               settings: {
                   slidesToShow: 2,
                   arrows: false,
@@ -57,7 +62,7 @@ $('.reviews__items').slick({
   dots: true,
         responsive: [
           {
-            breakpoint: 1250,
+            breakpoint: 1230,
             settings: {
                 arrows: false,
             }
