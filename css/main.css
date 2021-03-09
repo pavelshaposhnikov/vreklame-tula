@@ -264,11 +264,11 @@ summary::marker {
     padding: 0 5px 0 18px;
 }
 
-.nav-details summary {
+.navdetails summary {
     position: relative;
 }
 
-.nav-details summary:after {
+.navdetails summary:after {
     content: "+";
     color: #2586EE;
     position: absolute;
@@ -282,7 +282,7 @@ summary::marker {
     cursor: pointer;
 }
 
-.nav-details[open] summary:after {
+.navdetails[open] summary:after {
     transform: rotate(45deg);
     font-size: 30px;
     top: calc(100% - 16px / 2);
