@@ -285,7 +285,7 @@ summary::marker {
 .nav-details[open] summary:after {
     transform: rotate(45deg);
     font-size: 30px;
-    top: calc(60% - 16px / 2);
+    top: calc(100% - 16px / 2);
 }
 
 /* MOBILE NAV */
