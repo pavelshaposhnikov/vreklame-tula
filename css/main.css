@@ -237,7 +237,7 @@ ul, li {
 }
 
 .nav-toggle {
-    margin: 15px 0;
+    padding: 10px 0;
     position: relative;
     text-align: right;
     background: transparent;
@@ -285,14 +285,18 @@ ul, li {
     transition: all .3s linear;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 /*========================
-         Banner 
+         Layer 
 ==========================*/
 
 .banner {
     min-height: 643px;
     background-color: #2586EE;
-    background-image: url(../img/banner/lines.svg);
+    background-image: url(../img/layer/lines.svg);
     position: relative;
     z-index: 1;
 }
@@ -300,7 +304,7 @@ ul, li {
 .banner::after {
     content: "";
     position: absolute;
-    background: url(../img/banner/billboard.png) center center no-repeat;
+    background: url(../img/layer/billboard.png) center center no-repeat;
     bottom: 0;
     background-position: center;
     z-index: 2;
@@ -312,7 +316,7 @@ ul, li {
 .banner::before {
     content: "";
     position: absolute;
-    background: url(../img/banner/clouds.png) center center no-repeat;
+    background: url(../img/layer/clouds.png) center center no-repeat;
     left: 0;
     top: 0;
     z-index: 2;
@@ -377,7 +381,6 @@ ul, li {
     padding: 10px 10px 0px 0px;
     font-size: 15px;
     border: none;
-    width: 100%;
     cursor: pointer;
     color: #777;
 }
@@ -1256,7 +1259,7 @@ ul, li {
     .logo {
         margin-right: 0;
         position: absolute;
-        left: calc(50% - 121px / 2);
+        left: calc(52% - 121px / 2);
     }
 
     .logo img {
@@ -1334,7 +1337,7 @@ ul, li {
 
     .banner__inner {
         min-height: 841px;
-        background-image: url(../img/banner/billboard-tablets.png);
+        background-image: url(../img/layer/billboard-tablets.png);
         background-position-x: center;
         background-repeat: no-repeat;
     }
@@ -1935,7 +1938,7 @@ ul, li {
     }
 
     .banner {
-        background-image: url(../img/banner/baner-mobile.png);
+        background-image: url(../img/layer/baner-mobile.png);
         background-repeat: no-repeat;
         background-position: center;
         background-position-y: 1%;
