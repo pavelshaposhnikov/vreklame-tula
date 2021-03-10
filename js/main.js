@@ -35,7 +35,7 @@ $('.portfolio__items').slick({
     dots: true,
           responsive: [
             {
-              breakpoint: 1230,
+              breakpoint: 1240,
               settings: {
                   slidesToShow: 2,
                   arrows: false,
@@ -62,7 +62,7 @@ $('.reviews__items').slick({
   dots: true,
         responsive: [
           {
-            breakpoint: 1230,
+            breakpoint: 1240,
             settings: {
                 arrows: false,
             }
