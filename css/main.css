@@ -238,6 +238,10 @@ summary::marker {
     text-decoration: underline;
 }
 
+.nav__dropper {
+    margin-left: 15px;
+}
+
 .nav__sublist {
     position: absolute;
     z-index: 25;
@@ -1364,7 +1368,7 @@ summary::marker {
         top: 0;
         right: 0;
         width: 100vw;
-        height: 225vw;
+        height: 255vw;
         text-align: center;
         font-size: 24px;
         background-color: #fff;
@@ -1411,12 +1415,12 @@ summary::marker {
         padding: 0;
     }
 
-    .nav-details summary:after {
+    .navdetails summary:after {
         left: calc(64% - 16px / 2);
         top: 15px;
     }
     
-    .nav-details[open] summary:after {
+    .navdetails[open] summary:after {
         transform: rotate(45deg);
         font-size: 30px;
         top: calc(90% - 16px / 2);
@@ -1725,6 +1729,11 @@ summary::marker {
 
 @media (max-width: 760px) {
 
+    .navdetails summary:after {
+        left: calc(68% - 16px / 2);
+        top: 15px;
+    }
+
     .banner__form {
         width: 550px;
         left: calc(50% - 550px / 2);
@@ -1812,6 +1821,11 @@ summary::marker {
     .logo {
         left: 0;
         margin-left: 15px;
+    }
+
+    .navdetails summary:after {
+        left: calc(75% - 16px / 2);
+        top: 15px;
     }
 
     .mobile-nav {
@@ -2026,6 +2040,11 @@ summary::marker {
     .logo img {
         width: 51px;
         height: 38px;
+    }
+
+    .navdetails summary:after {
+        left: calc(82% - 16px / 2);
+        top: 15px;
     }
 
     .banner {
