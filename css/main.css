@@ -2053,6 +2053,10 @@ summary::marker {
         background-position: center;
         background-position-y: 1%;
     }
+	
+    .banner::before {
+	display: none;
+    }
 
     .banner__inner {
         background-image: none;
